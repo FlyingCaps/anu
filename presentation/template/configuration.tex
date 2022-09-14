@@ -8,19 +8,18 @@
 % defines the main color
 \definecolor{main_color}{RGB}{125,154,170}
 
-% logo that's shown just on the title page
-\newcommand{\LogoOnTitleSlide} {logo/ANU-logo}   
+% title logo (the left one in case there are two)
+\newcommand{\VSpaceBeforeLogo}        {0cm}
+\newcommand*{\OptionsForTitleLogoOne} {width=4cm}
+\newcommand{\LocationOfTitleLogoOne}  {logo/ANU-logo}
 
-% the measures of title page logo
-\newcommand*{\OptionsForTitleLogo} {width=4cm}
+% right title logo if not left empty
+\newcommand{\HSpaceBetweenLogos}      {.6cm}
+\newcommand*{\OptionsForTitleLogoTwo} {height=1.25cm}
+\newcommand{\LocationOfTitleLogoTwo}  {logo/UUlm-logo-long}
 
-% to easily play around with the position of the logo
-\newcommand{\SpaceBeforeLogo} {0cm}
-
-% logo that's shown on every page after the title page
-\newcommand{\LogoOnEachSlide} {logo/ANU-logo}
-
-% the measures of title logo that's on every slide (below-left)
+% logo for each slide
+\newcommand{\LogoOnEachSlide}         {logo/ANU-logo}
 \newcommand*{\OptionsForLogoPerSlide} {width=50pt} % height=20pt
 
 % Depending on the number of lines of your title and the number

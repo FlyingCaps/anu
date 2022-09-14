@@ -1,8 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}               
 \ProvidesPackage{AmnestyInternational}[                % because it's simple and it works! Like Amnesty!
-  2022/20/02 (Version 1.14)                            % And because I did not find any other name, and maybe to
+  2022/14/09 (Version 1.15)                            % And because I did not find any other name, and maybe to
   by Pascal Bercher, pascal.anu.edu.au,                %  force myself to produce a sty in Amnesty's corporate design.
-  https://cecs.anu.edu.au/people/pascal-bercher]       %  And of course to promote us!  -->  www.amnesty.org 
+  https://comp.anu.edu.au/people/pascal-bercher]       %  And of course to promote us!  -->  www.amnesty.org
 
 % Special thanks to:
 % - Thomas Geier (formerly Uni Ulm) for a **very** early version I've built upon
@@ -28,6 +28,7 @@
 % 1.12 (07.02.2022) -- added comments and changed coordinates of logo
 % 1.13 (07.02.2022) -- fooled (fixed) kile's syntax highlighting bug; and added optional package argument for two vs. one authors
 % 1.14 (20.02.2022) -- added two commands to easily adjust space before the author and logo in the title slide
+% 1.15 (14.09.2022) -- added support for specifying two logos on the title slide (mostly relevant for presentations, not lectures)
 
 
 % so that bullets are in *one* row
@@ -278,10 +279,12 @@
 \setbeamercolor{titleSmallBar}{bg=black!20!main_color,fg=white}
 
 
-
-
-
-\titlegraphic{\vspace*{\SpaceBeforeLogo}\expandafter\includegraphics\expandafter[\OptionsForTitleLogo]{\LogoOnTitleSlide}}
+\titlegraphic{%
+\vspace*{\VSpaceBeforeLogo}%
+\expandafter\includegraphics\expandafter[\OptionsForTitleLogoOne]{\LocationOfTitleLogoOne}%%
+\ifcsempty{LocationOfTitleLogoTwo}%
+{}{\hspace*{\HSpaceBetweenLogos}\expandafter\includegraphics\expandafter[\OptionsForTitleLogoTwo]{\LocationOfTitleLogoTwo}}%%
+}
 
 
 \ifdefstring{\twoAuthors}{true}
@@ -342,8 +345,8 @@
     \end{beamercolorbox}%
     \vskip.5cm
     \begin{beamercolorbox}[wd=\paperwidth,sep=5pt,center,#1]{date}
-      \textcolor{black}{\insertshortdate{}}
-    \end{beamercolorbox}\vskip0cm
+      \usebeamerfont{date}{\insertshortdate{}}
+    \end{beamercolorbox}\vskip.5cm
   }
   {
   % ONE AUTHOR
