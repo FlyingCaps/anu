@@ -3,12 +3,16 @@ Just in case I make any changes at a later point...
 
 A few notes about this:
 
-- The presentation is written in a way that you can easily create a handout in which 4 slides
-  are printed on one page. You just need to call the makefile with a different argument.
+- The structure for these lecture slides basically follows the one of those for presentations --
+  it's just a bit more complex. They are also written in a way that you can easily create a handout
+  in which 4 slides are printed on one page. You just need to call the makefile with a different argument.
 
 - If you work with overlays (e.g., tikz graphics that gradually expand), you will benefit from
   a special macro that allows to easily specify which slide number should go into the handout.
   For an explanation, open the AmnestyInternational.sty and search for "Fancy Handouts".
+
+- In addition, each chapter has its own folder. This also allows to define a different lecturer
+  per chapter, which clearly might be required for courses.
 
 - The sty file (configured in a configuration file) supports one author as well as two authors
   (see the example PDFs). To choose one over the other, just set the argument of the package
