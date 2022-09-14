@@ -1,4 +1,7 @@
-INSTRUCTIONS and USEFUL INFO:
+Let's call this version 1.00. :)
+Just in case I make any changes at a later point...
+
+A few notes about this:
 
 (1) 
 The entire document is configured using configuration.tex.
@@ -24,3 +27,6 @@ above-mentioned configuration file).
 Please, read this PDF completely!
 It contains valuable advice on how to write a project report.
 Thus, keep the pre-compiled PDFs so you can look up the advice at any later stage.
+
+Pascal
+pascal.bercher@anu.edu.au
