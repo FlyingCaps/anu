@@ -18,15 +18,15 @@ A few notes about this:
   (see the example PDFs). To choose one over the other, just set the argument of the package
   (called AmnestyInternational) accordingly.
 
-- To compile it, just call the make script. Just "make" will compile only the standard slides
+- To compile it, just call the make script. Just "make c=xx" will compile only the standard slides
   multiple times, making sure all references are resolved correctly. Just compiling once might
-  not do the job. You have those options:
-  make 1on1: identical to just "make". see above
-  make 1on1-quick: just compiles once. Much quicker, but references might be wrong.
-  make 4on1: also a complete (long) compilation, but for the handout (4 on 1)
-  make 4on1-quick: just compiles once, but for the handout.
-  make all: 1on1 4on1
-  make all-quick: 1on1-quick 4on1-quick
+  not do the job. The xx is the chapter number according to the file name. You have those options:
+  make c=xx 1on1: identical to just "make". see above
+  make c=xx 1on1-quick: just compiles once. Much quicker, but references might be wrong.
+  make c=xx 4on1: also a complete (long) compilation, but for the handout (4 on 1)
+  make c=xx 4on1-quick: just compiles once, but for the handout.
+  make c=xx all: 1on1 4on1
+  make c=xx all-quick: 1on1-quick 4on1-quick
 
 - If you have any ideas how this template (including its macros) or even
   its readme can be improved, just reach out to me.
