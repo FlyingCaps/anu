@@ -2,13 +2,19 @@ This template has been created by:
 
 Pascal Bercher,
 pascal.bercher@anu.edu.au
-https://cecs.anu.edu.au/people/pascal-bercher
+https://comp.anu.edu.au/people/pascal-bercher/
 http://bercher.net
 
 
-Feel free to use it! I do not want it to be re-shared, i.e., you can not publicly
+Feel free to use it! I do not want it to be re-shared, i.e., you cannot publicly
 make it available, but you may use it for the intended purpose, i.e., writing a
 research project report.
+
+
+Also note that whereas this template clearly has been created for theses at the ANU
+it can of course easily be adjusted for other Universities. Maybe I will also make
+it general enough once so that exchanging logos becomes even easier (though it should
+actually be already *very* easy I think).
 
 
 INSTRUCTIONS and USEFUL INFO:
