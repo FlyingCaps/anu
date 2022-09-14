@@ -1,0 +1,43 @@
+% author: Pascal Bercher
+%         pascal.bercher@anu.edu.au
+%         https://cecs.anu.edu.au/people/pascal-bercher
+% date: 27.11.2020
+
+
+
+% defines the main color
+\definecolor{main_color}{RGB}{125,154,170}
+
+% logo that's shown just on the title page
+\newcommand{\LogoOnTitleSlide} {logo/ANU-logo}   
+
+% the measures of title page logo
+\newcommand*{\OptionsForTitleLogo}{width=4cm}
+
+% logo that's shown on every page after the title page
+\newcommand{\LogoOnEachSlide}  {logo/ANU-logo}      
+
+% the measures of title logo that's on every slide (below-left)
+\newcommand*{\OptionsForLogoPerSlide}{width=50pt} % height=20pt
+
+% Shows what's between the subsection name and the title name.
+\newcommand{\Delimiter} {:\quad} %many more possible, e.g., "\quad---\quad"
+
+
+
+% well, the title!
+\title{%
+  TITLE%                                         UPDATE!
+}
+
+% well, the date!
+\date{\today} %                                  UPDATE!
+
+% well, the author!                              UPDATE!
+\newcommand{\FirstLecturer}  {PERSON 1}           % \author is overwritten by the style,
+\newcommand{\SecondLecturer} {PERSON 2}           % so don't specify it!
+
+% well, your affiliation!                        UPDATE!
+\newcommand{\GroupFirstLecturer}  {GROUP 1}
+\newcommand{\GroupSecondLecturer} {GROUP 2}
+\institute{THE UNIVERSITY/COLLEGE}
