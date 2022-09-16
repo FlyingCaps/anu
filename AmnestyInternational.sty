@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}               
 \ProvidesPackage{AmnestyInternational}[                % because it's simple and it works! Like Amnesty!
-  2022/14/09 (Version 1.15)                            % And because I did not find any other name, and maybe to
+  2022/16/09 (Version 1.16)                            % And because I did not find any other name, and maybe to
   by Pascal Bercher, pascal.anu.edu.au,                %  force myself to produce a sty in Amnesty's corporate design.
   https://comp.anu.edu.au/people/pascal-bercher]       %  And of course to promote us!  -->  www.amnesty.org
 
@@ -29,7 +29,7 @@
 % 1.13 (07.02.2022) -- fooled (fixed) kile's syntax highlighting bug; and added optional package argument for two vs. one authors
 % 1.14 (20.02.2022) -- added two commands to easily adjust space before the author and logo in the title slide
 % 1.15 (14.09.2022) -- added support for specifying two logos on the title slide (mostly relevant for presentations, not lectures)
-
+% 1.16 (16.09.2022) -- added support for running authors; required for presentations when subscripts are used for affiliations
 
 % so that bullets are in *one* row
 \useoutertheme{smoothbars}
@@ -173,6 +173,7 @@
 % begin: FOOTER ------------------------------------------------------------
 
 \newcommand{\NumberOfPages} {\inserttotalframenumber}
+\providecommand{\RunningAuthor}{\insertshortauthor}
 
 \beamertemplatenavigationsymbolsempty % no navigation symbols
 
@@ -180,7 +181,7 @@
    \begin{beamercolorbox}[ht=4ex,leftskip=1.1cm,rightskip=.3cm]{author}
     \hrule
     \vspace{0.1cm}
-    \hspace{1cm} \insertshortauthor \hfill
+    \hspace{1cm} \RunningAuthor \hfill
     %
     % note that etoolbox can evaluate boolean expressions using and/or,
     % but I was too lazy to get to know the syntax exactly, so instead I
