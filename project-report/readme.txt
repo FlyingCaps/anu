@@ -1,5 +1,4 @@
-Let's call this version 1.00. :)
-Just in case I make any changes at a later point...
+Version 1.0001 (see bottom for a change log list)
 
 A few notes about this:
 
@@ -9,24 +8,32 @@ Just fill out all these commands specified there.
 Additionally, adapt mainfile.tex according to your purposes. 
 
 (2)
-Compilation: execute the makefile. Read the PDF (Section 4.2 Building the PDF)
-for further details.
+Compilation: execute the makefile. Read Section 4.2 "Building the PDF"
+of the pre-compiled for further details. (See next point!)
 
 (3)
-The template folder contains pre-compiled PDFs. 
-They are all (amost) identical, they just differ in:
-* the title page layout (there are two different designs)
-* the type of project (Honours thesis vs. 6 or 12 pt research project)
-So, only the very first page differs; it exists in four versions.
+The subfolder "pre-compiled-PDFs" contains pre-compiled PDFs.
+See the readme in that folder to check out what they are for.
+(But clearly you can use them to look up how to build the PDF
+in the first place! See previous point.)
 
-(a)
+(3.a)
 Note that you can choose the layout of your preference (in the
 above-mentioned configuration file).
 
-(b)
-Please, read this PDF completely!
+(3.b)
+Please, read the PDF (see above) completely!
 It contains valuable advice on how to write a project report.
-Thus, keep the pre-compiled PDFs so you can look up the advice at any later stage.
+I advice to come back to this PDF even at later stages of the
+project (i.e., after you wrote some parts already) as odds are
+high you did not follow all the advice since it might not have
+been relevant to you yet.
+
 
 Pascal
 pascal.bercher@anu.edu.au
+
+
+
+1.00  - not sure how old that is. :) Approx early 2022.
+1.001 - 25.9.2022: only this readme was improved and some files were moved.
