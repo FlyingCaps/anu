@@ -1,4 +1,4 @@
-Version 1.01 (see bottom for a change log list)
+Version 1.02 (see bottom for a change log list)
 
 A few notes about this:
 
@@ -35,8 +35,9 @@ pascal.bercher@anu.edu.au
 
 
 
-1.00  - not sure how old that is. :) Approx early 2022.
+1.00  - not sure how old that is. :) Approx. early 2022.
 1.001 - 25.9.2022: only this readme was improved and some files were moved.
 1.01  - 29.9.2022: added two more pieces of advice to the main section:
         * on how to include definitions and theorems and how to write them and
         * some starting points for how to write mathemathical equations/formulae
+1.02  - 27.10.2022: added third and fourth supervisor to config file (if required)
