@@ -6,7 +6,7 @@
 
 
 % only the title page is centered; all other pages are aligned according to books
-\newgeometry{left=2.5cm,right=2.5cm,top=4cm}
+\newgeometry{left=2.5cm,right=2.5cm,top=2.5cm}
 \thispagestyle{empty}
 
 \newdateformat{monthyeardate}{%
@@ -28,8 +28,13 @@
 
 
 \ \\[2em]
-\phantom{x} \hfill\parbox[t]{44.5 mm}{\bfseries \School\\[.5em]
-\hfill\mdseries \College}\\[6 em]
+\phantom{x} \hfill
+\begin{minipage}{58.75 mm}
+\raggedright
+\bfseries \School\\[.5em]
+\mdseries%
+\noindent\College
+\end{minipage}\\[6 em]
 \hfill
 
 \noindent

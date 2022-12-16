@@ -1,4 +1,4 @@
-Version 1.02 (see bottom for a change log list)
+Version 1.03 (see bottom for a change log list)
 
 A few notes about this:
 
@@ -41,3 +41,6 @@ pascal.bercher@anu.edu.au
         * on how to include definitions and theorems and how to write them and
         * some starting points for how to write mathemathical equations/formulae
 1.02  - 27.10.2022: added third and fourth supervisor to config file (if required)
+1.03  - 16.12.2022: updated college name and fixed some spelling errors (thanks, chatGPT!)
+        // I still need to update the pre-compiled PDFs... 
+        // I'll do that at some point in the future
